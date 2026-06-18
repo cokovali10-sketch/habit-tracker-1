@@ -1,44 +1,26 @@
 [
     {
-        "name": "ап",
-        "days": {},
-        "xp": 0,
-        "category": "other"
+        "name": "викалияяяяя",
+        "days": {
+            "2026-06-18": true
+        },
+        "xp": 10,
+        "category": "general"
     },
     {
-        "name": "1221",
-        "category": "1",
-        "days": {},
-        "xp": 0
-    },
-    {
-        "name": "12",
+        "name": "1",
         "category": "sport",
-        "days": {},
-        "xp": 0
+        "days": {
+            "2026-06-18": true
+        },
+        "xp": 10
     },
     {
         "name": "2",
-        "category": "3",
-        "days": {},
-        "xp": 0
-    },
-    {
-        "name": "1",
-        "category": "1",
-        "days": {},
-        "xp": 0
-    },
-    {
-        "name": "1",
-        "category": "11",
-        "days": {},
-        "xp": 0
-    },
-    {
-        "name": "",
-        "category": "1",
-        "days": {},
-        "xp": 0
+        "category": "sport",
+        "days": {
+            "2026-06-18": true
+        },
+        "xp": 10
     }
 ]

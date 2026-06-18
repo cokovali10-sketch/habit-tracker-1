@@ -1,16 +1,22 @@
-# Habit Tracker
+# Habit Tracker PRO
 
-Консольное приложение для отслеживания привычек.
+Python desktop application for tracking habits with XP, streaks and statistics.
 
-## Возможности
+## Features
+- Add habits
+- Delete habits
+- Mark completed habits
+- XP system
+- Level system
+- Streak tracking
+- Progress visualization
+- Graph of XP
 
-- Добавление привычек
-- Отметка выполнения
-- XP система
-- Статистика
-- Streak
+## Tech stack
+- Python
+- Tkinter (GUI)
+- Matplotlib (graphs)
 
-## Запуск
-
+## Run
 ```bash
-python main.py
+python gui.py

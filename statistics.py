@@ -1,6 +1,7 @@
 from datetime import date, timedelta
 
-
+def get_level(xp):
+    return xp // 100 + 1
 def get_streak(habit):
     streak = 0
     current_day = date.today()
@@ -19,7 +20,6 @@ def get_streak(habit):
 
 def show_stats(habits):
     print("\nСТАТИСТИКА")
-
     total_xp = 0
 
     for habit in habits:
@@ -31,6 +31,9 @@ def show_stats(habits):
         streak = get_streak(habit)
 
         total_xp += habit["xp"]
+        level = get_level(habit["xp"])
+
+        print(f"Уровень: {level}")
 
         print(f"\n{habit['name']}")
         print(f"XP: {habit['xp']}")

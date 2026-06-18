@@ -33,7 +33,18 @@ def mark_done(habits, index):
 
     print("Выполнено! +10 XP")
 
+def search_habits(habits, text):
+    results = []
 
+    for habit in habits:
+        if text.lower() in habit["name"].lower():
+            results.append(habit)
+
+    return results
+def edit_habit(habits, index, new_name):
+    if 0 <= index < len(habits):
+        habits[index]["name"] = new_name
+        save_data(habits)
 def delete_habit(habits, index):
     if index < 0 or index >= len(habits):
         print("Неверный номер")

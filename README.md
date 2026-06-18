@@ -1,21 +1,28 @@
 # Habit Tracker PRO
 
-Python desktop application for tracking habits with XP, streaks and statistics.
+A desktop productivity app built with Python.
 
 ## Features
-- Add habits
-- Delete habits
-- Mark completed habits
+- Add / delete habits
 - XP system
 - Level system
 - Streak tracking
 - Progress visualization
-- Graph of XP
+- Statistics panel
+- Graph of progress
 
-## Tech stack
+## Tech Stack
 - Python
 - Tkinter (GUI)
-- Matplotlib (graphs)
+- Matplotlib (charts)
+- JSON storage
+
+## Why this project
+This project was built to practice:
+- software architecture
+- UI development
+- state management
+- basic data persistence
 
 ## Run
 ```bash

@@ -2,6 +2,10 @@ import tkinter as tk
 from tkinter import messagebox
 from datetime import date, timedelta
 import json
+# --- константы вынесены FORGE refactor ---
+CONST_5 = 5
+CONST_20 = 20
+
 
 FILE = "habits.json"
 
@@ -154,7 +158,7 @@ root.configure(bg="#0f172a")
 title = tk.Label(
     root,
     text="🔥 HABIT TRACKER PRO",
-    font=("Arial", 20, "bold"),
+    font=("Arial", CONST_20, "bold"),
     bg="#0f172a",
     fg="white"
 )
@@ -163,7 +167,7 @@ title.pack(pady=10)
 
 # INPUT
 entry = tk.Entry(root, font=("Arial", 14), bg="#1e293b", fg="white")
-entry.pack(pady=5, ipadx=10, ipady=5)
+entry.pack(pady=CONST_5, ipadx=10, ipady=CONST_5)
 
 
 # CATEGORY
@@ -187,10 +191,10 @@ def btn(text, color, cmd):
                      bg=color, fg="white", width=12)
 
 
-btn("Add", "#3b82f6", add).grid(row=0, column=0, padx=5)
-btn("Done", "#22c55e", done).grid(row=0, column=1, padx=5)
-btn("Delete", "#ef4444", delete).grid(row=0, column=2, padx=5)
-btn("Stats", "#a855f7", show_stats).grid(row=0, column=3, padx=5)
+btn("Add", "#3b82f6", add).grid(row=0, column=0, padx=CONST_5)
+btn("Done", "#22c55e", done).grid(row=0, column=1, padx=CONST_5)
+btn("Delete", "#ef4444", delete).grid(row=0, column=2, padx=CONST_5)
+btn("Stats", "#a855f7", show_stats).grid(row=0, column=3, padx=CONST_5)
 
 
 # LIST
@@ -202,7 +206,7 @@ listbox = tk.Listbox(
     fg="white",
     selectbackground="#3b82f6"
 )
-listbox.pack(pady=20)
+listbox.pack(pady=CONST_20)
 
 
 refresh()
